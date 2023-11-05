@@ -1,0 +1,155 @@
+@@include('./particles/head.html',{
+    'title':'Grójec 24'
+})
+@@include('./particles/navbar.html')
+<hr class="uk-container uk-container-xlarge uk-visible@s">
+@@include('./particles/main-navbar.html')
+
+<hr class="uk-container uk-container-xlarge uk-divider-icon">
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/advertisement-banner.html')
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-3-4@m">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin uk-grid-match" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-3-5@m">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="uk-card-body">
+                            <article class="uk-article">
+                                <div class="uk-flex uk-flex-between">
+                                    <div>@@include('./particles/breadcrumb.html',{
+                                        'first':'Grójec24',
+                                        'second':'Aktualności'
+                                    })</div>
+                                    <div>@@include('./particles/badge.html',{
+                                    'text':'Pilne!'   
+                                    })</div>
+                                </div>
+                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
+                                <p class="uk-article-meta">12 Pażdziernik 2023. Kategoria <a href="#">Blog</a></p>
+                            
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-4@m">
+                @@include('./particles/advertisement-banner-vertical.html')
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/slider-articles.html')
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/advertisement-banner.html')
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tab.html',{
+            'switch-class':'aktualnosci',
+            'title':'Aktualności',
+            'tabs-1':'Grójec',
+            'tabs-2':'Powiat brójecki',
+            'tabs-3':'Samorząd',
+            'tabs-4':'Praca Grójec',
+            'tabs-5':'Policja'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/advertisement-banner.html')
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tab.html',{
+            'switch-class':'sport',
+            'title':'Sport',
+            'tabs-1':'Mazowsze Grójec',
+            'tabs-2':'Grójec Ośrodek Sportu',
+            'tabs-3':'MKS Grójec',
+            'tabs-4':'Sport dzieci',
+            'tabs-5':'-----'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/advertisement-banner.html')
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tab.html',{
+            'switch-class':'kultura',
+            'title':'Kultura',
+            'tabs-1':'Grójecki Osrodek Kultury',
+            'tabs-2':'Miejsko-Gminna Biblioteka Publiczna w Grójcu',
+            'tabs-3':'Koncerty',
+            'tabs-4':'-----',
+            'tabs-5':'-----'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tab-slider-articles.html',{
+            'switch-class':'o-grojcu',
+            'title':'O Grójcu',
+            'tabs-1':'Historia i zabytki',
+            'tabs-2':'Kościół i religia',
+            'tabs-3':'Grójczanie i ich pasje',
+            'tabs-4':'Publicystyka'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        @@include('./particles/slideshow.html',{
+            'title-1':'Slajder 1',
+            'title-2':'Slajder 2',
+            'title-3':'Slajder 3',
+            'description-1':'Krótki opis 1',
+            'description-2':'Krótki opis 2',
+            'description-3':'Krótki opis 3'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tab-grid-card.html',{
+            'switch-class':'po-godzinach',
+            'title':'O Grójcu',
+            'tabs-1':'Historia i zabytki',
+            'tabs-2':'Kościół i religia',
+            'tabs-3':'Grójczanie i ich pasje',
+            'tabs-4':'Publicystyka',
+            'tabs-5':'----'
+        })
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-tiles-articles-grid.html')
+    </div>
+</div>
+<hr class="uk-container uk-container-xlarge uk-divider-icon">
+@@include('./particles/footer.html')
+

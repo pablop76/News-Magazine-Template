@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grójec 24</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="/favicon.png">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="uk-navbar-container uk-navbar-transparent uk-padding-small">
+    <div class="uk-container">
+        <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m">
+            <div>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
+                        <li class="uk-active"><a class="uk-search-toggle" href="#" data-uk-search-icon></a></li>
+                    </ul>
+                    <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li>
+                                    <div class="uk-margin">
+                                    <a href="#"><img class="logo" src="images/logo-footer.png" alt="logo"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-margin">
+                                        <form class="uk-search uk-search-default">
+                                            <span data-uk-search-icon></span>
+                                            <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search">
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="uk-divider-icon"></li>
+                                <li class="uk-active"><a href="#">Aktualności</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">Po godzinach</a></li>
+                                <li class="uk-divider-icon"></li>
+                                <li><a href="#">Grójec w obiektywie</a></li>
+                                <li><a href="#">TVGrójec24</a></li>
+                                <li><a href="#">Ogłoszenia</a></li>
+                                <li><a href="#">Praca</a></li>
+                                <li class="uk-divider-icon"></li>
+                                <li><a href="#">Alarm24</a></li>
+                                <li><a href="#">Reklama</a></li>
+                                <li><a href="#">Redakcja</a></li>
+                            </ul>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-center"><img class="logo" src="images/logo.jpg" alt="logo"></div>
+            </div>
+            <div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#"><span data-uk-icon="facebook"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="twitter"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="instagram"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="youtube"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<hr class="uk-container uk-container-xlarge uk-visible@s">
+<nav class="uk-navbar-container uk-navbar-transparent uk-visible@s">
+    <div class="uk-container">
+        <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m uk-subnav-divider">
+            <div>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">Aktualności</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">O Grójcu</a></li>
+                        <li><a href="#">Po godzinach</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Grójec w obiektywie</a></li>
+                        <li><a href="#">TVGrójec24</a></li>
+                        <li><a href="#">Ogłoszenia</a></li>
+                        <li><a href="#">Praca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Alarm24</a></li>
+                        <li><a href="#">Reklama</a></li>
+                        <li><a href="#">Redakcja</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<hr class="uk-container uk-container-xlarge uk-divider-icon">
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-cover-container">
+    <canvas width="1920" height="450"></canvas>
+    <img src="https://placehold.co/1920x450?text=reklama+ratio+64+:+15" alt="reklama" data-uk-cover>
+</div>
+
+    </div>
+</div>
+
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-3-4@m">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin uk-grid-match" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-3-5@m">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-2-5@m">
+                        <div class="uk-card-body">
+                            <article class="uk-article">
+                                <div class="uk-flex uk-flex-between">
+                                    <div><ul class="uk-breadcrumb">
+    <li><a href="#">Grójec24</a></li>
+    <li><a href="#">Aktualności</a></li>
+</ul></div>
+                                    <div><span class="uk-badge uk-badge-danger uk-margin-left">Pilne!</span></div>
+                                </div>
+                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
+                                <p class="uk-article-meta">12 Pażdziernik 2023. Kategoria <a href="#">Blog</a></p>
+                            
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-4@m">
+                <div class="uk-cover-container">
+    <canvas width="600" height="900"></canvas>
+    <img src="https://placehold.co/600x900?text=reklama+ratio+2+:+3" alt="reklama" data-uk-cover>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-slider-container-offset" data-uk-slider>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Left</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Left</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Left</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Left</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media Left</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-cover-container">
+    <canvas width="1920" height="450"></canvas>
+    <img src="https://placehold.co/1920x450?text=reklama+ratio+64+:+15" alt="reklama" data-uk-cover>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="#"><h2>Aktualności</h2></a>
+        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .aktualnosci">
+            <li>
+                <a href="#">Grójec</a>
+            </li>
+            <li>
+                <a href="#">Powiat brójecki</a>
+            </li>
+            <li>
+                <a href="#">Samorząd</a>
+            </li>
+            <li>
+                <a href="#">Praca Grójec</a>
+            </li>
+            <li>
+                <a href="#">Policja</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+                
+<div>
+    <ul class="uk-switcher uk-margin aktualnosci">
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójec</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Powiat brójecki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Powiat brójecki</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Powiat brójecki</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Powiat brójecki</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Samorząd</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Samorząd</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Samorząd</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Samorząd</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Praca Grójec</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Policja</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Policja</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Policja</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Policja</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-cover-container">
+    <canvas width="1920" height="450"></canvas>
+    <img src="https://placehold.co/1920x450?text=reklama+ratio+64+:+15" alt="reklama" data-uk-cover>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="#"><h2>Sport</h2></a>
+        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .sport">
+            <li>
+                <a href="#">Mazowsze Grójec</a>
+            </li>
+            <li>
+                <a href="#">Grójec Ośrodek Sportu</a>
+            </li>
+            <li>
+                <a href="#">MKS Grójec</a>
+            </li>
+            <li>
+                <a href="#">Sport dzieci</a>
+            </li>
+            <li>
+                <a href="#">-----</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+                
+<div>
+    <ul class="uk-switcher uk-margin sport">
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Mazowsze Grójec</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">MKS Grójec</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Sport dzieci</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Sport dzieci</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Sport dzieci</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Sport dzieci</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">-----</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-cover-container">
+    <canvas width="1920" height="450"></canvas>
+    <img src="https://placehold.co/1920x450?text=reklama+ratio+64+:+15" alt="reklama" data-uk-cover>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="#"><h2>Kultura</h2></a>
+        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .kultura">
+            <li>
+                <a href="#">Grójecki Osrodek Kultury</a>
+            </li>
+            <li>
+                <a href="#">Miejsko-Gminna Biblioteka Publiczna w Grójcu</a>
+            </li>
+            <li>
+                <a href="#">Koncerty</a>
+            </li>
+            <li>
+                <a href="#">-----</a>
+            </li>
+            <li>
+                <a href="#">-----</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+                
+<div>
+    <ul class="uk-switcher uk-margin kultura">
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Koncerty</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Koncerty</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Koncerty</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">Koncerty</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">-----</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+            <div class="uk-width-2-5@m uk-animation-slide-right-small">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">-----</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-2-5@m uk-animation-slide-left-small">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container uk-width-2-5">
+                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <div class=" uk-padding-small">
+                            <h3 class="uk-card-title">-----</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-expand@m">
+                    <div class="uk-cover-container">
+                        <canvas width="600" height="900"></canvas>
+                        <img src="https://placehold.co/200x600?text=reklama+ratio+1+:+3" alt="reklama" data-uk-cover>
+                    </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="#"><h2>O Grójcu</h2></a>
+        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .o-grojcu">
+            <li>
+                <a href="#">Historia i zabytki</a>
+            </li>
+            <li>
+                <a href="#">Kościół i religia</a>
+            </li>
+            <li>
+                <a href="#">Grójczanie i ich pasje</a>
+            </li>
+            <li>
+                <a href="#">Publicystyka</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div>
+    <ul class="uk-switcher uk-margin o-grojcu">
+        <li>
+            <div class="uk-slider-container-offset uk-animation-slide-left-small" data-uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Historia i zabytki</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Historia i zabytki</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Historia i zabytki</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Historia i zabytki</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Historia i zabytki</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+            
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            
+            </div>
+        </li>
+        <li>
+            <div class="uk-slider-container-offset uk-animation-slide-left-small" data-uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Kościół i religia</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Kościół i religia</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Kościół i religia</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Kościół i religia</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Kościół i religia</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+            
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            
+            </div>
+        </li>
+        <li>
+            <div class="uk-slider-container-offset uk-animation-slide-left-small" data-uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+            
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            
+            </div>
+        </li>
+        <li>
+            <div class="uk-slider-container-offset uk-animation-slide-left-small" data-uk-slider>
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Publicystyka</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Publicystyka</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Publicystyka</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Publicystyka</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" alt="" width="1800" height="1200">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Publicystyka</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+            
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            
+            </div>
+        </li>
+    </ul>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="animation: fade;min-height: 300; max-height: 600">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="https://placehold.co/1920x600?text=min-height:+300;+max-height:+600" alt="" data-uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Slajder 1</h3>
+                <p class="uk-margin-remove">Krótki opis 1</p>
+            </div>
+        </li>
+        <li>
+            <img src="https://placehold.co/1920x800?text=min-height:+300;+max-height:+600" alt="" data-uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Slajder 2</h3>
+                <p class="uk-margin-remove">Krótki opis 2</p>
+            </div>
+        </li>
+        <li>
+            <img src="https://placehold.co/1920x800?text=min-height:+300;+max-height:+600" alt="" data-uk-cover>
+            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Slajder 3</h3>
+                <p class="uk-margin-remove">Krótki opis 3</p>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="#"><h2>Historia i zabytki</h2></a>
+        <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .po-godzinach">
+            <li>
+                <a href="#">Historia i zabytki</a>
+            </li>
+            <li>
+                <a href="#">Kościół i religia</a>
+            </li>
+            <li>
+                <a href="#">Grójczanie i ich pasje</a>
+            </li>
+            <li>
+                <a href="#">Publicystyka</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+                
+<div>
+    <ul class="uk-switcher uk-margin po-godzinach">
+    <li>
+        <div class="uk-grid-small uk-child-width-1-3@m uk-flex-center uk-animation-slide-bottom-small" data-uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-last">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-first">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Historia i zabytki</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-small uk-child-width-1-3@m uk-flex-center uk-animation-slide-bottom-small" data-uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-last">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-first">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Kościół i religia</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-small uk-child-width-1-3@m uk-flex-center uk-animation-slide-bottom-small" data-uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-last">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-first">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Grójczanie i ich pasje</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="uk-grid-small uk-child-width-1-3@m uk-flex-center uk-animation-slide-bottom-small" data-uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-last">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-first">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Publicystyka</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+
+    </div>
+</div>
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <a href="#"><h2>Z regionu</h2></a>
+<div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-text-center" data-uk-grid>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="https://placehold.co/1800x1200?text=ratio+3+:+2" width="1800" height="1200" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Artykół</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<hr class="uk-container uk-container-xlarge uk-divider-icon">
+<div class="uk-section">
+    <div class="uk-container uk-container-xlarge">
+        <div class="uk-grid-match" data-uk-grid>
+            <div class="uk-width-3-4@m">
+                <div class="uk-grid-match" data-uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Grójec24.net</h3>
+                            <hr>
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
+                        </div>
+                     </div>
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <h3 class="uk-card-title">Polecamy</h3>
+                            <hr>
+                            <div class="uk-child-width-1-2@m" data-uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="uk-width-1-4@m">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <img class="logo" src="images/logo.jpg" alt="">
+                    <p>Grójec24.net-najwiekrzy portal informacyjny Grójca i Powiatu Grójeckiego. Od 2013 roku dostarczamy najświeższe wiadomości z Grójca i okolic. Kazdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="uk-grid-small uk-child-width-1-2@m" data-uk-grid>
+                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Grojec24.net</span> - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego</div>
+                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">AaaMedia.pl Mateusz Adamski</span></div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
+

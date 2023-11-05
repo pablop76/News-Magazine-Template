@@ -1,0 +1,27 @@
+.uk-navbar-nav > li > a {
+  text-transform: inherit;
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background-color: #2b83a9;
+  color: #fff;
+}
+
+.uk-badge {
+  box-sizing: border-box;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 15px;
+  border-radius: 5px;
+  vertical-align: middle;
+  background: #2983a8;
+  color: #fff !important;
+  font-size: 11px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+.uk-badge-danger {
+  background: #f0506e;
+}
