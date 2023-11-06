@@ -15,7 +15,7 @@
 
 ## knfiguracja projektu.
 
-1. pobranie paczkę z projektem [github](https://.....)
+1. pobranie paczkę z projektem [github](https://github.com/pablop76/News-Magazine-Template)
 2. wypakować
 3. otworzyc folder za pomoca IDE
 4. otworzyć terminal w katalogu projektu
