@@ -1,0 +1,42 @@
+.section-tab {
+  &-aktualnosci {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $aktualnosci-color;
+    }
+  }
+  &-o-grojcu {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $o-grojcu-color;
+    }
+  }
+  &-sport {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $sport-color;
+    }
+  }
+  &-po-godzinach {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $po-godzinach-color;
+    }
+  }
+  &-w-obiektywie {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $w-obiektywie-color;
+    }
+  }
+  &-tv-grojec24 {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $tv-grojec24-color;
+    }
+  }
+  &-praca {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $praca-color;
+    }
+  }
+  &-alarm24 {
+    .uk-subnav-pill > .uk-active > a {
+      background-color: $alarm24-color;
+    }
+  }
+}

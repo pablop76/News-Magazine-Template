@@ -1,24 +1,30 @@
 @@include('./particles/head.html',{
     'title':'Grójec 24'
 })
-@@include('./particles/navbar.html')
-<hr class="uk-container uk-container-xlarge uk-visible@s">
-@@include('./particles/main-navbar.html')
+<div style="background-color: #FFFFFF;" class="uk-section uk-padding-remove" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+    @@include('./particles/navbar.html')
+
+    @@include('./particles/main-navbar.html')
+</div>
 
 <hr class="uk-container uk-container-xlarge uk-divider-icon">
-<div class="uk-section">
+<div class="uk-section uk-padding-remove-top">
     <div class="uk-container uk-container-expand">
         @@include('./particles/advertisement-banner.html')
     </div>
 </div>
-
+<div class="uk-section uk-padding-remove">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/news-ticker.html')
+    </div>
+</div>
 <div class="uk-section">
     <div class="uk-container uk-container-xlarge">
-        <div class="uk-grid-match uk-grid-row-small" data-uk-grid>
+        <div class="uk-grid-match uk-grid-column-small " data-uk-grid>
             <div class="uk-width-3-4@m">
                 <div class="uk-card uk-card-default uk-grid-collapse uk-margin uk-grid-match" data-uk-grid>
                     <div class="uk-card-media-left uk-cover-container uk-width-3-5@m">
-                        <img src="https://placehold.co/600x400?text=reklama+ratio+3+:+2" alt="" data-uk-cover>
+                    <img src="images/ai-generated-1920.jpg" alt="" data-uk-cover>
                         <canvas width="600" height="400"></canvas>
                     </div>
                     <div class="uk-width-2-5@m">
@@ -33,11 +39,18 @@
                                     'text':'Pilne!'   
                                     })</div>
                                 </div>
-                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h1>
-                                <p class="uk-article-meta">12 Pażdziernik 2023. Kategoria <a href="#">Blog</a></p>
+                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet.</a></h1>
+                                <p class="uk-article-meta">12 Pażdziernik 2023, <a href="#">Aktualności</a></p>
                             
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            
+                                <div class="uk-grid-small uk-child-width-auto" data-uk-grid>
+                                    <div>
+                                        <a class="uk-button uk-button-text" href="#">Czytaj więcej</a>
+                                    </div>
+                                    <div>
+                                        <a class="uk-button uk-button-text" href="#">5 Komentarzy</a>
+                                    </div>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -49,12 +62,17 @@
         </div>
     </div>
 </div>
-<div class="uk-section">
-    <div class="uk-container uk-container-expand">
+<div class="uk-section uk-padding-small">
+    <div class="uk-container uk-container-xlarge">
+        @@include('./particles/section-header.html',{
+            'background':'uk-badge-aktualnosci',
+            'title':'NAJNOWSZE # NOWOŚCI'
+        });
+
         @@include('./particles/slider-articles.html')
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
     <div class="uk-container uk-container-expand">
         @@include('./particles/advertisement-banner.html')
     </div>
@@ -63,6 +81,8 @@
     <div class="uk-container uk-container-xlarge">
         @@include('./particles/section-tab.html',{
             'switch-class':'aktualnosci',
+            'color-bulet':'aktualnosci',
+            'active-background':'section-tab-aktualnosci',
             'title':'Aktualności',
             'tabs-1':'Grójec',
             'tabs-2':'Powiat brójecki',
@@ -72,7 +92,7 @@
         })
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
     <div class="uk-container uk-container-expand">
         @@include('./particles/advertisement-banner.html')
     </div>
@@ -81,6 +101,8 @@
     <div class="uk-container uk-container-xlarge">
         @@include('./particles/section-tab.html',{
             'switch-class':'sport',
+            'color-bulet':'sport',
+            'active-background':'section-tab-sport',
             'title':'Sport',
             'tabs-1':'Mazowsze Grójec',
             'tabs-2':'Grójec Ośrodek Sportu',
@@ -90,7 +112,7 @@
         })
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
     <div class="uk-container uk-container-expand">
         @@include('./particles/advertisement-banner.html')
     </div>
@@ -99,6 +121,8 @@
     <div class="uk-container uk-container-xlarge">
         @@include('./particles/section-tab.html',{
             'switch-class':'kultura',
+            'color-bulet':'po-godzinach',
+            'active-background':'section-tab-po-godzinach',
             'title':'Kultura',
             'tabs-1':'Grójecki Osrodek Kultury',
             'tabs-2':'Miejsko-Gminna Biblioteka Publiczna w Grójcu',
@@ -108,10 +132,12 @@
         })
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
     <div class="uk-container uk-container-xlarge">
         @@include('./particles/section-tab-slider-articles.html',{
             'switch-class':'o-grojcu',
+            'color-bulet':'o-grojcu',
+            'active-background':'section-tab-o-grojcu',
             'title':'O Grójcu',
             'tabs-1':'Historia i zabytki',
             'tabs-2':'Kościół i religia',
@@ -120,22 +146,24 @@
         })
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-remove-top">
     <div class="uk-container uk-container-expand">
         @@include('./particles/slideshow.html',{
-            'title-1':'Slajder 1',
-            'title-2':'Slajder 2',
+            'title-1':'SUPER MARIO BROS. FILM',
+            'title-2':'SZYBCY I WŚCIEKLI 10',
             'title-3':'Slajder 3',
-            'description-1':'Krótki opis 1',
-            'description-2':'Krótki opis 2',
+            'description-1':'Sympatyczny hydraulik Mario wyrusza w niebezpieczną przygodę wraz z przyjacielem Toadem i księżniczką Peach po Grzybowym Królestwie, aby odnaleźć swojego brata Luigiego, a przy okazji uratować świat przed bezwzględnym Bowserem, który potrafi zionąć ogniem.',
+            'description-2':'Wiele lat wcześniej Dominic Toretto (Vin Diesel) wraz ze swoją załogą pokonali brazylijskiego bossa narkotykowego Hernana Reyesa. Przeszłość upomina się o swoje, kiedy Dante (Jason Momoa) zamierza pomścić śmierć swojego ojca. Jest zdeterminowany i nie cofnie się przed niczym, aby osiągnąć swój cel. Dominic i jego rodzina są w ogromnym niebezpieczeństwie.',
             'description-3':'Krótki opis 3'
         })
     </div>
 </div>
-<div class="uk-section">
+<div class="uk-section uk-padding-small">
     <div class="uk-container uk-container-xlarge">
         @@include('./particles/section-tab-grid-card.html',{
             'switch-class':'po-godzinach',
+            'color-bulet':'w-obiektywie',
+            'active-background':'section-tab-w-obiektywie',
             'title':'O Grójcu',
             'tabs-1':'Historia i zabytki',
             'tabs-2':'Kościół i religia',
@@ -147,7 +175,9 @@
 </div>
 <div class="uk-section">
     <div class="uk-container uk-container-xlarge">
-        @@include('./particles/section-tiles-articles-grid.html')
+        @@include('./particles/section-tiles-articles-grid.html',{
+            'color-bulet':'tv-grojec24'
+        })
     </div>
 </div>
 <hr class="uk-container uk-container-xlarge uk-divider-icon">

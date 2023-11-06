@@ -1,0 +1,30 @@
+.logo {
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.uk-sticky-fixed {
+  .logo {
+    transition: all 0.5s;
+    transform: scale(0.6);
+  }
+}
+.main-navbar {
+  background-color: $tv-grojec24-color;
+  .uk-navbar-nav > li > a {
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0 10px;
+    &:hover {
+      background-color: darken($tv-grojec24-color, 5%);
+    }
+  }
+  .uk-navbar-nav > li.uk-active > a {
+    color: #fff;
+    background-color: darken($tv-grojec24-color, 5%);
+  }
+  @media (min-width: 960px) {
+    .uk-navbar-nav {
+      gap: 0;
+    }
+  }
+}

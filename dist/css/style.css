@@ -1,9 +1,96 @@
-.uk-navbar-nav > li > a {
-  text-transform: inherit;
+body,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-3xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.uk-subnav-pill > .uk-active > a {
-  background-color: #2b83a9;
+.section-tab h2 {
+  margin: 0;
+}
+
+.uk-navbar-subtitle {
+  font-size: 0.875em;
+}
+
+.logo {
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.uk-sticky-fixed .logo {
+  transition: all 0.5s;
+  transform: scale(0.6);
+}
+
+.main-navbar {
+  background-color: #d4000e;
+}
+.main-navbar .uk-navbar-nav > li > a {
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0 10px;
+}
+.main-navbar .uk-navbar-nav > li > a:hover {
+  background-color: #bb000c;
+}
+.main-navbar .uk-navbar-nav > li.uk-active > a {
+  color: #fff;
+  background-color: #bb000c;
+}
+@media (min-width: 960px) {
+  .main-navbar .uk-navbar-nav {
+    gap: 0;
+  }
+}
+
+.advertisement-banner {
+  min-height: 400px;
+}
+
+.advertisement-banner:after {
+  background: #000;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.first-subtitle {
+  font-weight: 300;
+  font-size: 25px;
+  color: #fff;
+}
+
+.second-subtitle {
+  color: #f2f2f2;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.475;
+}
+
+.footer {
+  background-color: #232325;
   color: #fff;
 }
 
@@ -22,6 +109,104 @@
   align-items: center;
   line-height: 0;
 }
-.uk-badge-danger {
+.uk-badge-aktualnosci {
   background: #f0506e;
+  color: #fff;
+}
+.uk-badge-o-grojcu {
+  background: #ff9800;
+}
+.uk-badge-sport {
+  background: #4cb050;
+}
+.uk-badge-po-godzinach {
+  background: #ff4011;
+}
+.uk-badge-w-obiektywie {
+  background: #6441a5;
+}
+.uk-badge-tv-grojec24 {
+  background: #d4000e;
+}
+.uk-badge-praca {
+  background: #64666c;
+}
+.uk-badge-alarm24 {
+  background: #40a9ff;
+}
+
+.news-ticker.tm-heading {
+  position: relative;
+}
+
+.news-ticker.tm-heading {
+  background-color: #d4000e;
+  color: #fff;
+}
+
+.news-ticker.tm-heading:after {
+  right: -19px;
+  border-left-color: #d4000e !important;
+}
+
+.news-ticker.tm-heading:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.news-ticker-bg {
+  background-color: #000;
+}
+
+.uk-heading-bullet-aktualnosci::before {
+  border-left: calc(5px + 0.1em) solid #f0506e;
+}
+.uk-heading-bullet-o-grojcu::before {
+  border-left: calc(5px + 0.1em) solid #ff9800;
+}
+.uk-heading-bullet-sport::before {
+  border-left: calc(5px + 0.1em) solid #4cb050;
+}
+.uk-heading-bullet-po-godzinach::before {
+  border-left: calc(5px + 0.1em) solid #ff4011;
+}
+.uk-heading-bullet-w-obiektywie::before {
+  border-left: calc(5px + 0.1em) solid #6441a5;
+}
+.uk-heading-bullet-tv-grojec24::before {
+  border-left: calc(5px + 0.1em) solid #d4000e;
+}
+.uk-heading-bullet-praca::before {
+  border-left: calc(5px + 0.1em) solid #64666c;
+}
+.uk-heading-bullet-alarm24::before {
+  border-left: calc(5px + 0.1em) solid #40a9ff;
+}
+
+.section-tab-aktualnosci .uk-subnav-pill > .uk-active > a {
+  background-color: #f0506e;
+}
+.section-tab-o-grojcu .uk-subnav-pill > .uk-active > a {
+  background-color: #ff9800;
+}
+.section-tab-sport .uk-subnav-pill > .uk-active > a {
+  background-color: #4cb050;
+}
+.section-tab-po-godzinach .uk-subnav-pill > .uk-active > a {
+  background-color: #ff4011;
+}
+.section-tab-w-obiektywie .uk-subnav-pill > .uk-active > a {
+  background-color: #6441a5;
+}
+.section-tab-tv-grojec24 .uk-subnav-pill > .uk-active > a {
+  background-color: #d4000e;
+}
+.section-tab-praca .uk-subnav-pill > .uk-active > a {
+  background-color: #64666c;
+}
+.section-tab-alarm24 .uk-subnav-pill > .uk-active > a {
+  background-color: #40a9ff;
 }

@@ -1,0 +1,42 @@
+.uk-heading-bullet {
+  &-aktualnosci {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $aktualnosci-color;
+    }
+  }
+  &-o-grojcu {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $o-grojcu-color;
+    }
+  }
+  &-sport {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $sport-color;
+    }
+  }
+  &-po-godzinach {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $po-godzinach-color;
+    }
+  }
+  &-w-obiektywie {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $w-obiektywie-color;
+    }
+  }
+  &-tv-grojec24 {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $tv-grojec24-color;
+    }
+  }
+  &-praca {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $praca-color;
+    }
+  }
+  &-alarm24 {
+    &::before {
+      border-left: calc(5px + 0.1em) solid $alarm24-color;
+    }
+  }
+}

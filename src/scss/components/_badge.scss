@@ -12,7 +12,29 @@
   justify-content: center;
   align-items: center;
   line-height: 0;
-  &-danger {
-    background: #f0506e;
+  &-aktualnosci {
+    background: $aktualnosci-color;
+    color: #fff;
+  }
+  &-o-grojcu {
+    background: $o-grojcu-color;
+  }
+  &-sport {
+    background: $sport-color;
+  }
+  &-po-godzinach {
+    background: $po-godzinach-color;
+  }
+  &-w-obiektywie {
+    background: $w-obiektywie-color;
+  }
+  &-tv-grojec24 {
+    background: $tv-grojec24-color;
+  }
+  &-praca {
+    background: $praca-color;
+  }
+  &-alarm24 {
+    background: $alarm24-color;
   }
 }

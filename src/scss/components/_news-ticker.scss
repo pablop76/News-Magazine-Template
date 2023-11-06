@@ -1,0 +1,22 @@
+.news-ticker.tm-heading {
+  position: relative;
+}
+
+.news-ticker.tm-heading {
+  background-color: $tv-grojec24-color;
+  color: #fff;
+}
+.news-ticker.tm-heading:after {
+  right: -19px;
+  border-left-color: $tv-grojec24-color !important;
+}
+.news-ticker.tm-heading:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.news-ticker-bg {
+  background-color: #000;
+}

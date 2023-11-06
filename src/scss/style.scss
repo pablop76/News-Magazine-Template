@@ -1,3 +1,10 @@
+@import "./utils/variables";
+@import "./base/reset";
 @import "./base/typography";
-@import "./layout/navigation";
+@import "./layout/main-navbar";
+@import "./layout/advertisement-banner";
+@import "./layout/footer";
 @import "./components/badge";
+@import "./components/news-ticker";
+@import "./components/bullet";
+@import "./components/tab";
