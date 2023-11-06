@@ -1,6 +1,6 @@
 # strona
 
-![Kompletne rozwiązanie dla witryn z wiadomościami i czasopismami](./.....jpg)
+![Kompletne rozwiązanie dla witryn z wiadomościami i czasopismami](./magazine-layout.png)
 
 ## użyte technologie.
 
