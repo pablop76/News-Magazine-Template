@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grójec 24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="/favicon.png">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.8/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div
+  style="background-color: #ffffff;z-index: 999;"
+  class="uk-section uk-padding-remove"
+  data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top"
+>
+  <nav class="uk-navbar-container uk-navbar-transparent uk-padding-small">
+    <div class="uk-container">
+        <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m uk-flex">
+            <div>
+                <div class="uk-navbar-center"><img class="logo" src="images/logo.jpg" alt="logo"></div>
+            </div>
+            <div class="uk-flex-first@m uk-margin-remove-top">
+                <div class="uk-navbar-left uk-flex-center uk-flex-left@m">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
+                        <li class="uk-active"><a class="uk-search-toggle" href="#" data-uk-search-icon></a></li>
+                    </ul>
+                    <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    
+                            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                <li>
+                                    <div class="uk-margin">
+                                    <a class="uk-logo" href="#"><img class="logo" src="images/logo-footer.png" alt="logo"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-margin">
+                                        <form class="uk-search uk-search-default">
+                                            <span data-uk-search-icon></span>
+                                            <input class="uk-search-input" type="search" placeholder="Szukaj" aria-label="Search">
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="uk-divider-icon"></li>
+                                <li class="uk-active"><a href="#">Aktualności</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">Po godzinach</a></li>
+                                <li class="uk-divider-icon"></li>
+                                <li><a href="#">Grójec w obiektywie</a></li>
+                                <li><a href="#">TVGrójec24</a></li>
+                                <li><a href="#">Ogłoszenia</a></li>
+                                <li><a href="#">Praca</a></li>
+                                <li class="uk-divider-icon"></li>
+                                <li><a href="#">Alarm24</a></li>
+                                <li><a href="#">Reklama</a></li>
+                                <li><a href="#">Redakcja</a></li>
+                            </ul>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-right uk-flex uk-flex-center uk-flex-right@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#"><span data-uk-icon="facebook"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="twitter"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="instagram"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="youtube"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav> 
+  <nav class="main-navbar uk-navbar-container uk-navbar-transparent uk-visible@m">
+    <div class="uk-container">
+        <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m uk-subnav-divider uk-text-uppercase">
+            <div>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/">Aktualności</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">O Grójcu</a></li>
+                        <li><a href="#">Po godzinach</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">
+                            W obiektywie
+                            <!-- <div>
+                            Grójec
+                            <div class="uk-navbar-subtitle">w obiektywie</div>
+                            </div> -->
+                            </a>
+                        </li>
+                        <li><a href="#">TVGrójec24</a></li>
+                        <li><a href="#">Ogłoszenia</a></li>
+                        <li><a href="#">Praca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">Alarm24</a></li>
+                        <li><a href="#">Reklama</a></li>
+                        <li>
+                            <a href="#">Redakcja <span uk-navbar-parent-icon></span></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="category.html">Szablon kategorii lista</a></li>
+                                    <li><a href="category-grid.html">Szablon kategorii grid</a></li>
+                                    <li><a href="single-article.html">Szablon artykułu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+</div>
+
+<hr class="uk-container uk-divider-icon" />
+<div class="uk-section uk-section-xlarge uk-padding-remove">
+    <div class="uk-section breadcrumbs-subpage uk-padding">
+    <div class="uk-container">
+        <ul class="uk-breadcrumb">
+            <li><a uk-icon="icon: home" href="/"></a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Aktualności</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="uk-section">
+  <div class="uk-container">
+    <div uk-grid>
+      <div class="uk-width-2-3@m">
+        <div class="uk-grid-match uk-child-width-1-2@s uk-grid-medium" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/fantasy-2861815_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-o-grojcu">O Grójcu</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">O Grójcu</a></p>
+                    </div>
+                </div>
+             </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/buildings-2602324_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-aktualnosci">Aktualności</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Aktualności</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/archaeological-site-2370325_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-sport">Sport</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Sport</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/fantasy-2861815_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-praca">Praca</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Praca</a></p>
+                    </div>
+                </div>
+             </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                      <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/buildings-2602324_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-alarm24">Alarm</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Alarm</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/archaeological-site-2370325_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-reklama">Reklama</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Reklama</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="uk-pagination" data-uk-margin>
+    <li><a href="#"><span uk-pagination-previous></span></a></li>
+    <li><a href="#">1</a></li>
+    <li class="uk-disabled"><span>…</span></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li class="uk-active"><span>7</span></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#"><span uk-pagination-next></span></a></li>
+</ul>
+      </div>
+      <div class="uk-width-1-3@m" id="js-oversized-2">
+        <div uk-sticky="end: #js-oversized-2; offset: 80">
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          <form class="uk-search uk-search-default">
+    <span class="uk-search-icon-flip" uk-search-icon></span>
+    <input class="uk-search-input" type="search" placeholder="Szukaj w serwisie" aria-label="Search">
+</form>
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          <h2 class="uk-heading-line uk-text-center"><span style=@@color class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" ># NOWOŚCI</span></h2>
+          <div
+  class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-1@m uk-grid-match uk-grid-row-small uk-grid-divider uk-grid uk-grid-stack"
+  uk-grid
+>
+  <div class="uk-first-column">
+    <a class="tm-item uk-margin-remove-first-child" href="single-article.html" target="_self">
+      <div
+        class="uk-child-width-expand uk-grid-column-small uk-grid"
+        uk-grid=""
+      >
+        <div class="uk-width-small@m uk-first-column uk-transition-toggle" tabindex="0">
+          <img
+            class="uk-transition-scale-up uk-transition-opaque"
+            loading="lazy"
+            class="tm-image"
+            src="images/beanie-2562646_640.jpg"
+            alt="The Importance of Conflict Management"
+          />
+        </div>
+
+        <div class="uk-margin-remove-first-child">
+          <h3 class="uk-text-default tm-title uk-margin-remove-bottom uk-h4 uk-margin-top">
+            Znaczenie zarządzania konfliktem
+          </h3>
+          <p
+            class="uk-text-smalltm-meta uk-article-meta uk-margin-small-top uk-margin-remove-bottom"
+          >
+            12:20 11.11.2023
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="uk-grid-margin uk-first-column">
+    <a class="tm-item uk-margin-remove-first-child" href="single-article.html" target="_self">
+      <div
+        class="uk-child-width-expand uk-grid-column-small uk-grid"
+        uk-grid=""
+      >
+        <div class="uk-width-small@m uk-first-column uk-transition-toggle" tabindex="0">
+          <img
+            class="uk-transition-scale-up uk-transition-opaque"
+            loading="lazy"
+            class="tm-image"
+            src="images/buildings-2602324_640.jpg"
+            alt="The Five Pillars of Digital Marketing"
+          />
+        </div>
+
+        <div class="uk-margin-remove-first-child">
+          <h3 class="uk-text-default tm-title uk-margin-remove-bottom uk-h4 uk-margin-top">
+            Pięć filarów marketingu cyfrowego
+          </h3>
+
+          <p
+            class="tm-meta uk-article-meta uk-margin-small-top uk-margin-remove-bottom"
+          >
+          12:40 11.11.2023
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="uk-grid-margin uk-first-column">
+    <a class="tm-item uk-margin-remove-first-child" href="single-article.html" target="_self">
+      <div
+        class="uk-child-width-expand uk-grid-column-small uk-grid"
+        uk-grid=""
+      >
+        <div class="uk-width-small@m uk-first-column uk-transition-toggle" tabindex="0">
+          <img
+            class="uk-transition-scale-up uk-transition-opaque"
+            loading="lazy"
+            class="tm-image"
+            src="images/climate-change-4552316_640.jpg"
+            alt="Ten Steps to Create a Marketing Plan"
+          />
+        </div>
+
+        <div class="uk-margin-remove-first-child">
+          <h3 class="uk-text-default tm-title uk-margin-remove-bottom uk-h4 uk-margin-top">
+            Cios przed meczem
+          </h3>
+
+          <p
+            class="tm-meta uk-article-meta uk-margin-small-top uk-margin-remove-bottom"
+          >
+          12:48 11.11.2023
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="uk-grid-margin uk-first-column">
+    <a class="tm-item uk-margin-remove-first-child" href="single-article.html" target="_self">
+      <div
+        class="uk-child-width-expand uk-grid-column-small uk-grid"
+        uk-grid=""
+      >
+        <div class="uk-width-small@m uk-first-column uk-transition-toggle" tabindex="0">
+          <img
+            class="uk-transition-scale-up uk-transition-opaque"
+            loading="lazy"
+            class="tm-image"
+            src="images/demonstration-4891291_640.jpg"
+            alt="Get Your Business Growing"
+          />
+        </div>
+        <div class="uk-margin-remove-first-child">
+          <h3 class="uk-text-default tm-title uk-margin-remove-bottom uk-h4 uk-margin-top">
+            Ciaran sprowadzi ulewy i mocny wiatr.
+          </h3>
+          <p
+            class="tm-meta uk-article-meta uk-margin-small-top uk-margin-remove-bottom"
+          >
+          13:20 11.11.2023
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          <h2 class="uk-heading-line uk-text-center"><span style=color:#fff class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-sport" ># SPORT</span></h2>
+            <div
+  class="uk-position-relative uk-visible-toggle uk-light"
+  tabindex="-1"
+  data-uk-slider
+>
+  <ul class="uk-slider-items uk-grid uk-grid-small">
+    <li class="uk-width-4-5 uk-cover-container">
+      <div class="uk-panel">
+        <canvas width="600" height="500"></canvas>
+        <img
+          src="images/athlete-1840437_640.jpg"
+          width="600"
+          height="400"
+          alt=""
+          data-uk-cover
+        />
+        <div
+          class="uk-position-bottom uk-overlay uk-overlay-primary uk-padding-small"
+        >
+          <h2 class="uk-text-small" data-uk-slider-parallax="x: 100,-100">
+            <a href="single-article.html">Trzy gole w 15 minut! Benfica nie wie, co się dzieje.</a>
+          </h2>
+        </div>
+      </div>
+    </li>
+    <li class="uk-width-4-5">
+      <div class="uk-panel">
+        <canvas width="600" height="500"></canvas>
+        <img
+          src="images/boxing-62867_640.jpg"
+          width="600"
+          height="400"
+          alt=""
+          data-uk-cover
+        />
+        <div
+          class="uk-position-bottom uk-overlay uk-overlay-primary uk-padding-small"
+        >
+          <h2 class="uk-text-small" uk-slider-parallax="x: 100,-100">
+            <a href="single-article.html">Decyzja ws. Xaviego po blamażu jest tylko jedna.</a>
+          </h2>
+        </div>
+      </div>
+    </li>
+    <li class="uk-width-4-5">
+      <div class="uk-panel">
+        <canvas width="600" height="500"></canvas>
+        <img
+          src="images/child-613199_640.jpg"
+          width="600"
+          height="400"
+          alt=""
+          data-uk-cover
+        />
+        <div
+          class="uk-position-bottom uk-overlay uk-overlay-primary uk-padding-small"
+        >
+          <h2 class="uk-text-small" data-uk-slider-parallax="x: 100,-100">
+            <a href="single-article.html">Skorża nie wytrzymał i wyleciał na trybuny.</a>
+          </h2>
+        </div>
+      </div>
+    </li>
+    <li class="uk-width-4-5">
+      <div class="uk-panel">
+        <canvas width="600" height="500"></canvas>
+        <img
+          src="images/firefighter-484540_1920.jpg"
+          width="600"
+          height="400"
+          alt=""
+          data-uk-cover
+        />
+        <div
+          class="uk-position-bottom uk-overlay uk-overlay-primary uk-padding-small"
+        >
+          <h2 class="uk-text-small" data-uk-slider-parallax="x: 100,-100">
+            <a href="single-article.html">Świątek zobaczyła wpis Djokovicia.</a>
+          </h2>
+        </div>
+      </div>
+    </li>
+    <li class="uk-width-4-5">
+      <div class="uk-panel">
+        <canvas width="600" height="500"></canvas>
+        <img
+          src="images/people-1560569_640.jpg"
+          width="600"
+          height="400"
+          alt=""
+          data-uk-cover
+        />
+        <div
+          class="uk-position-bottom uk-overlay uk-overlay-primary uk-padding-small"
+        >
+          <h2 class="uk-text-small" data-uk-slider-parallax="x: 100,-100">
+            <a href="single-article.html">Mike Tyson niespodziewanie odwiedził Polskę.</a>
+          </h2>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <a
+    class="uk-position-center-left uk-position-small uk-hidden-hover"
+    href
+    uk-slidenav-previous
+    uk-slider-item="previous"
+  ></a>
+  <a
+    class="uk-position-center-right uk-position-small uk-hidden-hover"
+    href
+    uk-slidenav-next
+    uk-slider-item="next"
+  ></a>
+</div>
+
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          <h2 class="uk-heading-line uk-text-center"><span style=color:#fff class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-redakcja" >KATEGORIE</span></h2>
+          <ul class="uk-nav uk-nav-default" uk-nav>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-aktualnosci" href="category.html"
+      >Aktualności</a
+    >
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-sport" href="#">Sport</a>
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-o-grojcu" href="#"
+      >O Grójcu</a
+    >
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-po-godzinach" href="#"
+      >Po godzinach</a
+    >
+  </li>
+</ul>
+<hr />
+<ul class="uk-nav-default" uk-nav>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-w-obiektywie" href="#"
+      >W obiektywie</a
+    >
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-tv-grojec24" href="#"
+      >TVGrójec24</a
+    >
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-ogloszenia" href="#"
+      >Ogłoszenia</a
+    >
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-praca" href="#">Praca</a>
+  </li>
+</ul>
+<hr />
+<ul class="uk-nav-default" uk-nav>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-alarm24" href="#">Alarm</a>
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-reklama" href="#">Reklama</a>
+  </li>
+  <li>
+    <a class="uk-heading-bullet uk-heading-bullet-redakcja" href="#"
+      >Redakcja</a
+    >
+  </li>
+</ul>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-xlarge">
+    <h2 class="uk-heading-line uk-text-center"><span style=@@color class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" >NAJNOWSZE # NOWOŚCI</span></h2>
+    <div class="uk-slider-container-offset" data-uk-slider>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-2@m uk-child-width-1-3@l uk-child-width-1-4@xl uk-grid uk-grid-medium uk-grid-match">
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="images/fantasy-2861815_640.jpg" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Wakacje...</h3>
+                            <p class="uk-article-meta-dark uk-margin-remove-top"><time datetime="2023-10-01T19:00">Październik 2023</time></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="images/apocalypse-2459465_640.jpg" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Tanga...</h3>
+                            <p class="uk-margin-remove-top"><time datetime="2023-11-01T19:00">Listopad 2023</time></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="images/snowman-321034_640.jpg" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Za nami...</h3>
+                            <p class="uk-margin-remove-top"><time datetime="2023-10-01T19:00">Październik 2023</time></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="images/houses-1622066_640.jpg" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Repertuar...</h3>
+                            <p class="uk-margin-remove-top"><time datetime="2023-09-01T19:00">Wrzesień 2023</time></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="https://placehold.co/600x400?text=Ratio+3:+2" alt="" data-uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Media...</h3>
+                            <p class="uk-margin-remove-top"><time datetime="2023-10-01T19:00">Październik 2023</time></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+  </div>
+</div>
+
+<hr class="uk-container uk-container-xlarge uk-divider-icon">
+<div class="uk-section footer uk-background-cover uk-panel" style="background-image: url(images/grand-palace-1822487_1920.jpg);">
+    <div class="uk-overlay-primary uk-position-cover"></div>
+    <div class="uk-container uk-container-xlarge uk-overlay">
+        <div class="uk-grid-match uk-grid-medium" data-uk-grid>
+            <div class="uk-width-3-4@m">
+                <div class="uk-grid-match uk-grid-medium" data-uk-grid>
+                    <div class="uk-width-1-3@m">
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Grójec24.net</h3>
+                            <hr>
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-active"><a href="#">Aktualności</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">kultura</a></li>
+                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">Po godzinach</a></li>
+                                <li><a href="#">Grójec w obiektywie</a></li>
+                                <li><a href="#">TVGrójec 24</a></li>
+                                <li><a href="#">Ogłoszenia</a></li>
+                                <li><a href="#">Praca</a></li>
+                                <li><a href="#">Alarm24</a></li>
+                                <li><a href="#">Reklama</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </ul>
+                        </div>
+                     </div>
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-card uk-card-secondary uk-card-body">
+                            <h3 class="uk-card-title">Polecamy</h3>
+                            <hr>
+                            <div class="uk-child-width-1-2@m" data-uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Grójec</a></li>
+                                        <li><a href="#">Powiat Grójecki</a></li>
+                                        <li><a href="#">Belsk Duży</a></li>
+                                        <li><a href="#">Błedów</a></li>
+                                        <li><a href="#">Chynów</a></li>
+                                        <li><a href="#">Goszczyn</a></li>
+                                        <li><a href="#">Jasieniec</a></li>
+                                        <li><a href="#">Mogielnica</a></li>
+                                        <li><a href="#">Nowe Miasto Nad Pilicą</a></li>
+                                        <li><a href="#">Pniewy</a></li>
+                                        <li><a href="#">Warka</a></li>
+                                        <li><a href="#">Mazowsze</a></li>
+                                        <li><a href="#">Mazowsze</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Samorząd</a></li>
+                                        <li><a href="#">Policja</a></li>
+                                        <li><a href="#">Na Sygnale</a></li>
+                                        <li><a href="#">Grójecki Ośrodek Sportu</a></li>
+                                        <li><a href="#">Grójecki Ośrodek Kultury</a></li>
+                                        <li><a href="#">Biblioteka w Grójcu</a></li>
+                                        <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                                        <li><a href="#">Historia i zabytki</a></li>
+                                        <li><a href="#">Kościół i religia</a></li>
+                                        <li><a href="#">Grójczanie i ich pasje</a></li>
+                                        <li><a href="#">Mazowsze Grójec</a></li>
+                                        <li><a href="#">MKS Grójec</a></li>
+                                        <li><a href="#">nieruchomości Grójec</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="uk-width-1-4@m">
+                <div class="uk-card uk-card-secondary uk-card-body">
+                    <img class="logo" src="images/logo-footer.png" alt="">
+                    <hr>
+                    <p>Grójec24.net-najwiekrzy portal informacyjny Grójca i Powiatu Grójeckiego. Od 2013 roku dostarczamy najświeższe wiadomości z Grójca i okolic. Kazdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
+                    <hr>
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#"><span data-uk-icon="facebook"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="twitter"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="instagram"></span></a></li>
+                        <li><a href="#"><span data-uk-icon="youtube"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="uk-position-relative uk-grid-small uk-child-width-1-2@m uk-light uk-text-small" data-uk-grid>
+                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Grojec24.net</span> - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego</div>
+                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">AaaMedia.pl Mateusz Adamski</span>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

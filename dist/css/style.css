@@ -24,18 +24,31 @@ h6 {
   margin: 0;
 }
 
-.uk-navbar-subtitle {
-  font-size: 0.875em;
+.uk-active > a {
+  color: #bb000c;
+}
+
+.uk-card-title {
+  font-size: 20px;
+}
+
+a.uk-link-text:hover {
+  color: #64666c;
 }
 
 .logo {
   transition: all 0.5s;
-  transform: scale(1);
+  transform: scale(0.8);
 }
 
 .uk-sticky-fixed .logo {
   transition: all 0.5s;
   transform: scale(0.6);
+  margin: 0 auto;
+}
+
+.uk-navbar-subtitle {
+  font-size: 0.875em;
 }
 
 .main-navbar {
@@ -72,7 +85,7 @@ h6 {
   height: 100%;
   display: block;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .first-subtitle {
@@ -83,23 +96,20 @@ h6 {
 
 .second-subtitle {
   color: #f2f2f2;
-  font-weight: 500;
   letter-spacing: 2px;
-  text-transform: uppercase;
   line-height: 1.475;
 }
 
-.footer {
-  background-color: #232325;
-  color: #fff;
+.breadcrumbs-subpage {
+  background-color: #F8F8F8;
 }
 
 .uk-badge {
   box-sizing: border-box;
   min-width: 18px;
   height: 18px;
-  padding: 0 15px;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 0px;
   vertical-align: middle;
   background: #2983a8;
   color: #fff !important;
@@ -132,7 +142,13 @@ h6 {
   background: #64666c;
 }
 .uk-badge-alarm24 {
-  background: #40a9ff;
+  background: #ff4d59;
+}
+.uk-badge-redakcja {
+  background: #00bdd3;
+}
+.uk-badge-reklama {
+  background: #007b00;
 }
 
 .news-ticker.tm-heading {
@@ -183,7 +199,16 @@ h6 {
   border-left: calc(5px + 0.1em) solid #64666c;
 }
 .uk-heading-bullet-alarm24::before {
-  border-left: calc(5px + 0.1em) solid #40a9ff;
+  border-left: calc(5px + 0.1em) solid #ff4d59;
+}
+.uk-heading-bullet-ogloszenia::before {
+  border-left: calc(5px + 0.1em) solid #56423d;
+}
+.uk-heading-bullet-reklama::before {
+  border-left: calc(5px + 0.1em) solid #007b00;
+}
+.uk-heading-bullet-redakcja::before {
+  border-left: calc(5px + 0.1em) solid #00bdd3;
 }
 
 .section-tab-aktualnosci .uk-subnav-pill > .uk-active > a {
@@ -208,5 +233,21 @@ h6 {
   background-color: #64666c;
 }
 .section-tab-alarm24 .uk-subnav-pill > .uk-active > a {
-  background-color: #40a9ff;
+  background-color: #ff4d59;
+}
+
+[data-uk-icon=facebook] svg {
+  color: #1877f2;
+}
+
+[data-uk-icon=youtube] svg {
+  color: #ff0000;
+}
+
+[data-uk-icon=instagram] svg {
+  color: #c32aa3;
+}
+
+[data-uk-icon=twitter] svg {
+  color: #1da1f2;
 }

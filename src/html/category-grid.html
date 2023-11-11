@@ -1,0 +1,143 @@
+@@include('./particles/head.html',{ 
+    'title':'Grójec 24' 
+})
+<div
+  style="background-color: #ffffff;z-index: 999;"
+  class="uk-section uk-padding-remove"
+  data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top"
+>
+  @@include('./particles/navbar.html') 
+  @@include('./particles/main-navbar.html')
+</div>
+
+<hr class="uk-container uk-divider-icon" />
+<div class="uk-section uk-section-xlarge uk-padding-remove">
+    @@include('./particles/breadcrumb-subpage.html',{
+        'first-breadcrumbs':'Sport',
+        'second-breadcrumbs':'Aktualności'
+    })
+</div>
+<div class="uk-section">
+  <div class="uk-container">
+    <div uk-grid>
+      <div class="uk-width-2-3@m">
+        <div class="uk-grid-match uk-child-width-1-2@s uk-grid-medium" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/fantasy-2861815_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-o-grojcu">O Grójcu</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">O Grójcu</a></p>
+                    </div>
+                </div>
+             </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/buildings-2602324_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-aktualnosci">Aktualności</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Aktualności</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/archaeological-site-2370325_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-sport">Sport</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Sport</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/fantasy-2861815_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-praca">Praca</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Praca</a></p>
+                    </div>
+                </div>
+             </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                      <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/buildings-2602324_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-alarm24">Alarm</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="single-article.html">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Alarm</a></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-media-top">
+                        <img class="uk-object-cover" style="aspect-ratio: 4 / 3" src="images/archaeological-site-2370325_640.jpg" width="800" height="600" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <span class="uk-badge uk-badge-reklama">Reklama</span>
+                        <h3 class="uk-card-title"><a class="uk-link-text" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h3>
+                        <p class="uk-article-meta">Autor: <a href="#" class="uk-text-bold">Super User</a> 12 Pażdziernik 2023. Kategoria: <a href="#" class="uk-text-bold">Reklama</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('./particles/pagination.html')
+      </div>
+      <div class="uk-width-1-3@m" id="js-oversized-2">
+        <div uk-sticky="end: #js-oversized-2; offset: 80">
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          @@include('./particles/search.html')
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          @@include('./particles/section-header.html',{
+            'background':'uk-badge-aktualnosci', 
+            'title':'# NOWOŚCI'
+          })
+          @@include('./particles/list-articles-aside.html')
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          @@include('./particles/section-header.html',{
+            'background':'uk-badge-sport', 
+            'title':'# SPORT',
+            'color':'color:#fff'
+            })
+            @@include('./particles/slider-aside.html')
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
+          @@include('./particles/section-header.html',{
+            'background':'uk-badge-redakcja', 
+            'title':'KATEGORIE',
+            'color':'color:#fff'
+            })
+          @@include('./particles/nav-aside.html')
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="uk-section uk-padding-small">
+  <div class="uk-container uk-container-xlarge">
+    @@include('./particles/section-header.html',{
+    'background':'uk-badge-aktualnosci', 
+    'title':'NAJNOWSZE # NOWOŚCI' })
+    @@include('./particles/slider-articles.html')
+  </div>
+</div>
+
+@@include('./particles/footer.html')

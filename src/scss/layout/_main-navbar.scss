@@ -1,12 +1,18 @@
 .logo {
   transition: all 0.5s;
-  transform: scale(1);
+  transform: scale(0.8);
 }
+
 .uk-sticky-fixed {
   .logo {
     transition: all 0.5s;
     transform: scale(0.6);
+    margin: 0 auto;
   }
+}
+
+.uk-navbar-subtitle {
+  font-size: 0.875em;
 }
 .main-navbar {
   background-color: $tv-grojec24-color;
@@ -15,12 +21,12 @@
     font-size: 0.75rem;
     padding: 0 10px;
     &:hover {
-      background-color: darken($tv-grojec24-color, 5%);
+      background-color: $active-link;
     }
   }
   .uk-navbar-nav > li.uk-active > a {
     color: #fff;
-    background-color: darken($tv-grojec24-color, 5%);
+    background-color: $active-link;
   }
   @media (min-width: 960px) {
     .uk-navbar-nav {

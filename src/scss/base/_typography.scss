@@ -1,1 +1,9 @@
 
+.uk-card-title{
+    font-size: 20px;
+}
+a.uk-link-text{
+    &:hover{
+        color: $praca-color;
+    }
+}

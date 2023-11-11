@@ -26,6 +26,10 @@ h6 {
     margin: 0;
   }
 }
-.uk-navbar-subtitle {
-  font-size: 0.875em;
+
+.uk-active{
+  &>a{
+    color: $active-link;
+  }
 }
+
