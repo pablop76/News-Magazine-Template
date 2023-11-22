@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grójec 24</title>
+    <title>Miasto 24</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,21 +24,22 @@
     <div class="uk-container">
         <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m uk-flex">
             <div>
-                <div class="uk-navbar-center"><img class="logo" src="images/logo.jpg" alt="logo"></div>
+                <div class="uk-navbar-center uk-flex uk-flex-center">
+                    <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">Logo</a>
+                </div>
             </div>
-            <div class="uk-flex-first@m uk-margin-remove-top">
+            <div class="uk-flex-first@m">
                 <div class="uk-navbar-left uk-flex-center uk-flex-left@m">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
                         <li class="uk-active"><a class="uk-search-toggle" href="#" data-uk-search-icon></a></li>
                     </ul>
                     <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
-                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                    
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">                   
                             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                                 <li>
                                     <div class="uk-margin">
-                                    <a class="uk-logo" href="#"><img class="logo" src="images/logo-footer.png" alt="logo"></a>
+                                        <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">Logo</a>
                                     </div>
                                 </li>
                                 <li>
@@ -52,19 +53,18 @@
                                 <li class="uk-divider-icon"></li>
                                 <li class="uk-active"><a href="#">Aktualności</a></li>
                                 <li><a href="#">Sport</a></li>
-                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">O Mieście</a></li>
                                 <li><a href="#">Po godzinach</a></li>
                                 <li class="uk-divider-icon"></li>
-                                <li><a href="#">Grójec w obiektywie</a></li>
-                                <li><a href="#">TVGrójec24</a></li>
+                                <li><a href="#">Miasto w obiektywie</a></li>
+                                <li><a href="#">TVMiasto24</a></li>
                                 <li><a href="#">Ogłoszenia</a></li>
                                 <li><a href="#">Praca</a></li>
                                 <li class="uk-divider-icon"></li>
                                 <li><a href="#">Alarm24</a></li>
                                 <li><a href="#">Reklama</a></li>
                                 <li><a href="#">Redakcja</a></li>
-                            </ul>
-                    
+                            </ul>          
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="/">Aktualności</a></li>
                         <li><a href="#">Sport</a></li>
-                        <li><a href="#">O Grójcu</a></li>
+                        <li><a href="#">O Mieście</a></li>
                         <li><a href="#">Po godzinach</a></li>
                     </ul>
                 </div>
@@ -103,12 +103,12 @@
                             <a href="#">
                             W obiektywie
                             <!-- <div>
-                            Grójec
+                            Miasto
                             <div class="uk-navbar-subtitle">w obiektywie</div>
                             </div> -->
                             </a>
                         </li>
-                        <li><a href="#">TVGrójec24</a></li>
+                        <li><a href="#">TVMiasto24</a></li>
                         <li><a href="#">Ogłoszenia</a></li>
                         <li><a href="#">Praca</a></li>
                     </ul>
@@ -258,7 +258,7 @@
                 <div class="uk-flex uk-flex-between">
                   <div>
                     <ul class="uk-breadcrumb">
-    <li><a href="#">Grójec24</a></li>
+    <li><a href="#">Miasto24</a></li>
     <li><a href="category.html">Aktualności</a></li>
 </ul>
                   </div>
@@ -267,7 +267,7 @@
                   </div>
                 </div>
                 <h1 class="uk-article-title">
-                  <a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet.</a>
+                  <a class="uk-link-reset" href="single-article.html">Heading Lorem ipsum dolor sit amet.</a>
                 </h1>
                 <p class="uk-article-meta">12 Pażdziernik 2023, <a href="#">Aktualności</a></p>
 
@@ -278,7 +278,7 @@
                     <a class="uk-button uk-button-text" href="single-article.html">Czytaj więcej</a>
                   </div>
                   <div>
-                    <a class="uk-button uk-button-text" href="#">5 Komentarzy</a>
+                    <a class="uk-button uk-button-text" href="single-article.html">5 Komentarzy</a>
                   </div>
                 </div>
               </article>
@@ -286,8 +286,8 @@
           </div>
         </div>
       </div>
-      <div class="uk-width-1-4@m">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true; autoplay: true;autoplay-interval: 3000">
+      <div class="uk-width-1-4@m min-height-xlarge">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true; autoplay: true;autoplay-interval: 3000;">
 
     <ul class="uk-slider-items uk-grid uk-grid-small uk-grid-match uk-height-1-1">
         <li class="uk-width-3-4">
@@ -326,7 +326,7 @@
 </div>
 <div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-xlarge">
-    <h2 class="uk-heading-line uk-text-center"><span style=@@color class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" >NAJNOWSZE # NOWOŚCI</span></h2> 
+    <h2 class="uk-heading-line uk-text-center"><span class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" >NAJNOWSZE # POPULARNE</span></h2> 
     <div class="uk-slider-container-offset" data-uk-slider>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
@@ -436,7 +436,7 @@
         <a class="uk-link-reset" href="#"><h2 class="uk-heading-bullet uk-heading-bullet-aktualnosci">Aktualności</h2></a>
         <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .aktualnosci">
             <li>
-                <a href="#">Grójec</a>
+                <a href="#">Miasto</a>
             </li>
             <li>
                 <a href="#">Powiat brójecki</a>
@@ -445,7 +445,7 @@
                 <a href="#">Samorząd</a>
             </li>
             <li>
-                <a href="#">Praca Grójec</a>
+                <a href="#">Praca Miasto</a>
             </li>
             <li>
                 <a href="#">Policja</a>
@@ -464,8 +464,8 @@
                         <img src="images/people-2575608_640.jpg" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Grójec</h3>
-                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Grójec</a></p>
+                        <h3 class="uk-card-title">Miasto</h3>
+                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Miasto</a></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="uk-grid-small uk-child-width-auto" uk-grid>
                             <div>
@@ -486,8 +486,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec</h3>
-                            <p class="uk-article-meta">Listipad 2023, <a href="#">Grójec</a></p>
+                            <h3 class="uk-card-title">Miasto</h3>
+                            <p class="uk-article-meta">Listipad 2023, <a href="#">Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -499,8 +499,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Grójec</a></p>
+                            <h3 class="uk-card-title">Miasto</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -512,14 +512,14 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Grójec</a></p>
+                            <h3 class="uk-card-title">Miasto</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@m">
+            <div class="uk-width-expand@m min-height-xlarge">
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 3000">
 
                     <ul class="uk-slideshow-items uk-height-1-1">
@@ -679,7 +679,7 @@
                         <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Praca Grójec</h3>
+                        <h3 class="uk-card-title">Praca Miasto</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
@@ -692,7 +692,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <h3 class="uk-card-title">Praca Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -704,7 +704,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <h3 class="uk-card-title">Praca Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -716,7 +716,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Praca Grójec</h3>
+                            <h3 class="uk-card-title">Praca Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -800,8 +800,8 @@
     <canvas width="1920" height="450"></canvas>
     <div class="uk-position-z-index uk-position-center uk-position-small uk-text-center uk-light">
         <p class="first-subtitle">Średnio zaawansowany</p>
-        <h2 class="uk-heading-small uk-margin-remove uk-text-bold uk-text-uppercase">Trasa Mural "Panorama Grójca"</h2>
-        <h3 class="uk-text-uppercase">Grójec centrum (początek: Grójec)</h3>
+        <h2 class="uk-heading-small uk-margin-remove uk-text-bold uk-text-uppercase">Trasa Mural "Panorama Miasta"</h2>
+        <h3 class="uk-text-uppercase">Miasto centrum (początek: Miasto)</h3>
         <p class="second-subtitle uk-margin-remove">Średnio trudna trasa rowerowa. Dostosowana do każdego poziomu sprawności. Niektóre odcinki Wyprawy mogą być ciężko przejezdne ze względu na nieutwardzone drogi. </p>
     </div>
     <img src="images/leisure-time-373859_1920.jpg" alt="reklama" data-uk-cover>
@@ -816,13 +816,13 @@
         <a class="uk-link-reset" href="#"><h2 class="uk-heading-bullet uk-heading-bullet-sport">Sport</h2></a>
         <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .sport">
             <li>
-                <a href="#">Mazowsze Grójec</a>
+                <a href="#">Mazowsze Miasto</a>
             </li>
             <li>
-                <a href="#">Grójec Ośrodek Sportu</a>
+                <a href="#">Miasto Ośrodek Sportu</a>
             </li>
             <li>
-                <a href="#">MKS Grójec</a>
+                <a href="#">MKS Miasto</a>
             </li>
             <li>
                 <a href="#">Sport dzieci</a>
@@ -844,8 +844,8 @@
                         <img src="images/people-2575608_640.jpg" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Mazowsze Grójec</h3>
-                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Mazowsze Grójec</a></p>
+                        <h3 class="uk-card-title">Mazowsze Miasto</h3>
+                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Mazowsze Miasto</a></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="uk-grid-small uk-child-width-auto" uk-grid>
                             <div>
@@ -866,8 +866,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
-                            <p class="uk-article-meta">Listipad 2023, <a href="#">Mazowsze Grójec</a></p>
+                            <h3 class="uk-card-title">Mazowsze Miasto</h3>
+                            <p class="uk-article-meta">Listipad 2023, <a href="#">Mazowsze Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -879,8 +879,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Mazowsze Grójec</a></p>
+                            <h3 class="uk-card-title">Mazowsze Miasto</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Mazowsze Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -892,14 +892,14 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Mazowsze Grójec</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Mazowsze Grójec</a></p>
+                            <h3 class="uk-card-title">Mazowsze Miasto</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Mazowsze Miasto</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@m">
+            <div class="uk-width-expand@m min-height-xlarge">
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 3000">
 
                     <ul class="uk-slideshow-items uk-height-1-1">
@@ -941,7 +941,7 @@
                         <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                        <h3 class="uk-card-title">Miasto Ośrodek Sportu</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
@@ -954,7 +954,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <h3 class="uk-card-title">Miasto Ośrodek Sportu</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -966,7 +966,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <h3 class="uk-card-title">Miasto Ośrodek Sportu</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -978,7 +978,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójec Ośrodek Sportu</h3>
+                            <h3 class="uk-card-title">Miasto Ośrodek Sportu</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1000,7 +1000,7 @@
                         <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">MKS Grójec</h3>
+                        <h3 class="uk-card-title">MKS Miasto</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
@@ -1013,7 +1013,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <h3 class="uk-card-title">MKS Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1025,7 +1025,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <h3 class="uk-card-title">MKS Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1037,7 +1037,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">MKS Grójec</h3>
+                            <h3 class="uk-card-title">MKS Miasto</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1196,10 +1196,10 @@
         <a class="uk-link-reset" href="#"><h2 class="uk-heading-bullet uk-heading-bullet-po-godzinach">Kultura</h2></a>
         <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .kultura">
             <li>
-                <a href="#">Grójecki Osrodek Kultury</a>
+                <a href="#">Miastoki Osrodek Kultury</a>
             </li>
             <li>
-                <a href="#">Miejsko-Gminna Biblioteka Publiczna w Grójcu</a>
+                <a href="#">Miejsko-Gminna Biblioteka Publiczna w Mieście</a>
             </li>
             <li>
                 <a href="#">Koncerty</a>
@@ -1224,8 +1224,8 @@
                         <img src="images/people-2575608_640.jpg" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
-                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Grójecki Osrodek Kultury</a></p>
+                        <h3 class="uk-card-title">Miastoki Osrodek Kultury</h3>
+                        <p class="uk-article-meta">12 Listipada 2023, <a href="#">Miastoki Osrodek Kultury</a></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="uk-grid-small uk-child-width-auto" uk-grid>
                             <div>
@@ -1246,8 +1246,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
-                            <p class="uk-article-meta">Listipad 2023, <a href="#">Grójecki Osrodek Kultury</a></p>
+                            <h3 class="uk-card-title">Miastoki Osrodek Kultury</h3>
+                            <p class="uk-article-meta">Listipad 2023, <a href="#">Miastoki Osrodek Kultury</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1259,8 +1259,8 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Grójecki Osrodek Kultury</a></p>
+                            <h3 class="uk-card-title">Miastoki Osrodek Kultury</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Miastoki Osrodek Kultury</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1272,14 +1272,14 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Grójecki Osrodek Kultury</h3>
-                            <p class="uk-article-meta">Listopad 2023, <a href="#">Grójecki Osrodek Kultury</a></p>
+                            <h3 class="uk-card-title">Miastoki Osrodek Kultury</h3>
+                            <p class="uk-article-meta">Listopad 2023, <a href="#">Miastoki Osrodek Kultury</a></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="uk-width-expand@m">
+            <div class="uk-width-expand@m min-height-xlarge">
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: false; autoplay: true; autoplay-interval: 3000">
 
                     <ul class="uk-slideshow-items uk-height-1-1">
@@ -1321,7 +1321,7 @@
                         <img src="https://placehold.co/800x600?text=reklama+ratio+4+:+3" width="800" height="600" alt="">
                     </div>
                     <div class="uk-card-body">
-                        <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                        <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Mieście</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
@@ -1334,7 +1334,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Mieście</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1346,7 +1346,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Mieście</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1358,7 +1358,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class=" uk-padding-small">
-                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Grójcu</h3>
+                            <h3 class="uk-card-title">Miejsko-Gminna Biblioteka Publiczna w Mieście</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -1558,7 +1558,7 @@
   <div class="uk-container uk-container-xlarge">
     <nav class="section-tab section-tab-o-grojcu uk-navbar-container uk-navbar-transparent" data-uk-navbar>
     <div class="uk-navbar-left">
-        <a class="uk-link-reset" href="#"><h2 class="uk-heading-bullet uk-heading-bullet-o-grojcu">O Grójcu</h2></a>
+        <a class="uk-link-reset" href="#"><h2 class="uk-heading-bullet uk-heading-bullet-o-grojcu">O Mieście</h2></a>
         <ul class="uk-subnav uk-subnav-pill" data-uk-switcher="connect: .o-grojcu">
             <li>
                 <a href="#">Historia i zabytki</a>
@@ -1872,7 +1872,7 @@
 </div>
 <div class="uk-section uk-padding-remove-top">
   <div class="uk-container uk-container-expand">
-    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="animation: fade;min-height: 300; max-height: 600">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="autoplay: true; animation: fade;min-height: 300; max-height: 600">
 
     <ul class="uk-slideshow-items">
         <li>
@@ -1883,17 +1883,17 @@
             </div>
         </li>
         <li>
-            <img src="https://placehold.co/1920x800?text=min-height:+300;+max-height:+600" alt="" data-uk-cover>
+            <img src="images/grand-palace-1822487_1920.jpg" alt="" data-uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                 <h3 class="uk-margin-remove">SZYBCY I WŚCIEKLI 10</h3>
                 <p class="uk-margin-remove">Wiele lat wcześniej Dominic Toretto (Vin Diesel) wraz ze swoją załogą pokonali brazylijskiego bossa narkotykowego Hernana Reyesa. Przeszłość upomina się o swoje, kiedy Dante (Jason Momoa) zamierza pomścić śmierć swojego ojca. Jest zdeterminowany i nie cofnie się przed niczym, aby osiągnąć swój cel. Dominic i jego rodzina są w ogromnym niebezpieczeństwie.</p>
             </div>
         </li>
         <li>
-            <img src="https://placehold.co/1920x800?text=min-height:+300;+max-height:+600" alt="" data-uk-cover>
+            <img src="images/firefighter-484540_1920.jpg" alt="" data-uk-cover>
             <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                <h3 class="uk-margin-remove">Slajder 3</h3>
-                <p class="uk-margin-remove">Krótki opis 3</p>
+                <h3 class="uk-margin-remove">Samochód doszczętnie spłonął na drodze</h3>
+                <p class="uk-margin-remove">Auto zapaliło się nagle podczas jazdy. Kierowca zdążył opuścić pojazd. Na miejsce przyjechali strażacy. Niestety samochód doszczętnie spłonął.</p>
             </div>
         </li>
     </ul>
@@ -2220,12 +2220,12 @@
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top uk-inline uk-margin uk-inline uk-margin">
-                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Grójcu</span>
+                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Mieście</span>
                 <img src="images/people-2557396_640.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
-                <h3 class="uk-card-title ">Policjanci z Grójca i innych miast ćwiczyli odparcie ataku</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <h3 class="uk-card-title ">Policjanci z Miasta i innych miast ćwiczyli odparcie ataku</h3>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" data-uk-grid>
                         <div>
@@ -2245,8 +2245,8 @@
                 <img src="images/startup-593341_640.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
-                <h3 class="uk-card-title ">Dachowanie na obwodnicy Grójca. Trasa S7 zablokowana</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <h3 class="uk-card-title ">Dachowanie na obwodnicy Miasta. Trasa S7 zablokowana</h3>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2267,7 +2267,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">W Nowym Mieście nad Pilicą rusza budowa 8. Dywizji Piechoty Armii Krajowej</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2289,7 +2289,7 @@
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">ITD zatrzymała pod Grójcem zbyt ciężką ciężarówkę
                 </h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2309,8 +2309,8 @@
                 <img src="images/woman-1822459_640.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
-                <h3 class="uk-card-title ">Policjanci z Grójca poszukują właściciela pieniędzy</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <h3 class="uk-card-title ">Policjanci z Miasta poszukują właściciela pieniędzy</h3>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2331,7 +2331,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Nie chcą wieży 5G pod Grójcem</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2352,7 +2352,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Nowy amfiteatr przy ul. Piotra Skargi z poślizgiem</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2373,7 +2373,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Żołnierska pamięć nadal trwa... Terytorialsi porządkują groby poprzedników</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2389,12 +2389,12 @@
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top uk-inline uk-margin">
-                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Grójcu</span>
+                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Mieście</span>
                 <img src="images/people-1560569_640.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Liga okręgowa: Polonia Iłża – Mazowsze Grójec 2:4</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2410,12 +2410,12 @@
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top uk-inline uk-margin">
-                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Grójcu</span>
+                <span class="uk-badge uk-badge-o-grojcu  uk-position-small uk-position-top-right">O Mieście</span>
                 <img src="images/relationship-2178963_640.jpg" width="1800" height="1200" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">W Sułkowicach już po raz dziesiąty rozegrano turniej tenisa stołowego</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2436,7 +2436,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Liga okręgowa: Mazowsze Grójec – Zodiak Sucha 2:0</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2457,7 +2457,7 @@
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title ">Nadchodzi druga edycja turnieju Mazovia Cup</h3>
-                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrześień 2023, <a href="#">Sport</a></p>
+                <p class="uk-article-meta"><a href="#">Jan Kowalski,</a> 12 wrzesień 2023, <a href="#">Sport</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="uk-grid-small uk-child-width-auto" uk-grid>
                         <div>
@@ -2482,16 +2482,16 @@
                 <div class="uk-grid-match uk-grid-medium" data-uk-grid>
                     <div class="uk-width-1-3@m">
                         <div class="uk-card uk-card-secondary uk-card-body">
-                            <h3 class="uk-card-title">Grójec24.net</h3>
+                            <h3 class="uk-card-title">Miasto24.net</h3>
                             <hr>
                             <ul class="uk-nav uk-nav-default">
                                 <li class="uk-active"><a href="#">Aktualności</a></li>
                                 <li><a href="#">Sport</a></li>
                                 <li><a href="#">kultura</a></li>
-                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">O Mieście</a></li>
                                 <li><a href="#">Po godzinach</a></li>
-                                <li><a href="#">Grójec w obiektywie</a></li>
-                                <li><a href="#">TVGrójec 24</a></li>
+                                <li><a href="#">Miasto w obiektywie</a></li>
+                                <li><a href="#">TVMiasto 24</a></li>
                                 <li><a href="#">Ogłoszenia</a></li>
                                 <li><a href="#">Praca</a></li>
                                 <li><a href="#">Alarm24</a></li>
@@ -2507,8 +2507,8 @@
                             <div class="uk-child-width-1-2@m" data-uk-grid>
                                 <div>
                                     <ul class="uk-nav uk-nav-default">
-                                        <li><a href="#">Grójec</a></li>
-                                        <li><a href="#">Powiat Grójecki</a></li>
+                                        <li><a href="#">Miasto</a></li>
+                                        <li><a href="#">Powiat Miastoki</a></li>
                                         <li><a href="#">Belsk Duży</a></li>
                                         <li><a href="#">Błedów</a></li>
                                         <li><a href="#">Chynów</a></li>
@@ -2527,16 +2527,16 @@
                                         <li><a href="#">Samorząd</a></li>
                                         <li><a href="#">Policja</a></li>
                                         <li><a href="#">Na Sygnale</a></li>
-                                        <li><a href="#">Grójecki Ośrodek Sportu</a></li>
-                                        <li><a href="#">Grójecki Ośrodek Kultury</a></li>
-                                        <li><a href="#">Biblioteka w Grójcu</a></li>
-                                        <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                                        <li><a href="#">Miastoki Ośrodek Sportu</a></li>
+                                        <li><a href="#">Miastoki Ośrodek Kultury</a></li>
+                                        <li><a href="#">Biblioteka w Mieście</a></li>
+                                        <li><a href="#">Sąd Rejonowy w Mieście</a></li>
                                         <li><a href="#">Historia i zabytki</a></li>
                                         <li><a href="#">Kościół i religia</a></li>
                                         <li><a href="#">Grójczanie i ich pasje</a></li>
-                                        <li><a href="#">Mazowsze Grójec</a></li>
-                                        <li><a href="#">MKS Grójec</a></li>
-                                        <li><a href="#">nieruchomości Grójec</a></li>
+                                        <li><a href="#">Mazowsze Miasto</a></li>
+                                        <li><a href="#">MKS Miasto</a></li>
+                                        <li><a href="#">nieruchomości Miasto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2546,9 +2546,10 @@
              </div>
             <div class="uk-width-1-4@m">
                 <div class="uk-card uk-card-secondary uk-card-body">
-                    <img class="logo" src="images/logo-footer.png" alt="">
+                    <!-- <img class="logo" src="" alt=""> -->
+                    <h3 class="uk-card-title">Logo</h3>
                     <hr>
-                    <p>Grójec24.net-najwiekrzy portal informacyjny Grójca i Powiatu Grójeckiego. Od 2013 roku dostarczamy najświeższe wiadomości z Grójca i okolic. Kazdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
+                    <p>Portal24.net - najwiekrzy portal informacyjny Miasta i Powiatu Miastokiego. Od 2013 roku dostarczamy najświeższe wiadomości z Miasta i okolic. Każdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
                     <hr>
                     <ul class="uk-navbar-nav">
                         <li><a href="#"><span data-uk-icon="facebook"></span></a></li>
@@ -2561,8 +2562,8 @@
         </div>
         <hr>
         <div class="uk-position-relative uk-grid-small uk-child-width-1-2@m uk-light uk-text-small" data-uk-grid>
-                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Grojec24.net</span> - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego</div>
-                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">AaaMedia.pl Mateusz Adamski</span>
+                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Portal24.net</span> - informacyjny portal mieszkańców Miasta i Powiatu Miasta</div>
+                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">Portal.net Jan Kowalski</span>
                 </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 @@include('./particles/head.html',{ 
-    'title':'Grójec 24' 
+    'title':'Miasto 24' 
 })
 <div style="background-color: #ffffff" class="uk-section uk-padding-remove" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
     @@include('./particles/navbar.html') 
@@ -33,14 +33,14 @@
               <article class="uk-article">
                 <div class="uk-flex uk-flex-between">
                   <div>
-                    @@include('./particles/breadcrumb-article.html',{ 'first':'Grójec24', 'second':'Aktualności' })
+                    @@include('./particles/breadcrumb-article.html',{ 'first':'Miasto24', 'second':'Aktualności' })
                   </div>
                   <div>
                     @@include('./particles/badge.html',{ 'text':'Pilne!' })
                   </div>
                 </div>
                 <h1 class="uk-article-title">
-                  <a class="uk-link-reset" href="">Heading Lorem ipsum dolor sit amet.</a>
+                  <a class="uk-link-reset" href="single-article.html">Heading Lorem ipsum dolor sit amet.</a>
                 </h1>
                 <p class="uk-article-meta">12 Pażdziernik 2023, <a href="#">Aktualności</a></p>
 
@@ -51,7 +51,7 @@
                     <a class="uk-button uk-button-text" href="single-article.html">Czytaj więcej</a>
                   </div>
                   <div>
-                    <a class="uk-button uk-button-text" href="#">5 Komentarzy</a>
+                    <a class="uk-button uk-button-text" href="single-article.html">5 Komentarzy</a>
                   </div>
                 </div>
               </article>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </div>
-      <div class="uk-width-1-4@m">
+      <div class="uk-width-1-4@m min-height-xlarge">
         @@include('./particles/advertisement-banner-vertical.html')
       </div>
     </div>
@@ -67,7 +67,7 @@
 </div>
 <div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-xlarge">
-    @@include('./particles/section-header.html',{ 'background':'uk-badge-aktualnosci', 'title':'NAJNOWSZE # NOWOŚCI' }) 
+    @@include('./particles/section-header.html',{ 'background':'uk-badge-aktualnosci', 'title':'NAJNOWSZE # POPULARNE' }) 
     @@include('./particles/slider-articles.html')
   </div>
 </div>
@@ -82,17 +82,17 @@
 </div>
 <div class="uk-section">
   <div class="uk-container uk-container-xlarge">
-    @@include('./particles/section-tab.html',{ 'switch-class':'aktualnosci', 'color-bulet':'aktualnosci', 'active-background':'section-tab-aktualnosci', 'title':'Aktualności', 'tabs-1':'Grójec', 
+    @@include('./particles/section-tab.html',{ 'switch-class':'aktualnosci', 'color-bulet':'aktualnosci', 'active-background':'section-tab-aktualnosci', 'title':'Aktualności', 'tabs-1':'Miasto', 
     'tabs-2':'Powiat brójecki', 'tabs-3':'Samorząd', 
-    'tabs-4':'Praca Grójec', 'tabs-5':'Policja' })
+    'tabs-4':'Praca Miasto', 'tabs-5':'Policja' })
   </div>
 </div>
 <div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-expand">
     @@include('./particles/advertisement-banner.html',{ 'urlimage':'leisure-time-373859_1920.jpg', 
     'subtitle-top':'Średnio zaawansowany', 
-    'title':'Trasa Mural "Panorama Grójca"', 
-    'title-2':'Grójec centrum (początek: Grójec)', 'description':'Średnio trudna trasa rowerowa. Dostosowana do każdego poziomu sprawności. Niektóre odcinki Wyprawy mogą być ciężko przejezdne ze względu na nieutwardzone drogi. ' })
+    'title':'Trasa Mural "Panorama Miasta"', 
+    'title-2':'Miasto centrum (początek: Miasto)', 'description':'Średnio trudna trasa rowerowa. Dostosowana do każdego poziomu sprawności. Niektóre odcinki Wyprawy mogą być ciężko przejezdne ze względu na nieutwardzone drogi. ' })
   </div>
 </div>
 <div class="uk-section">
@@ -102,9 +102,9 @@
         'color-bulet':'sport', 
         'active-background':'section-tab-sport', 
         'title':'Sport', 
-        'tabs-1':'Mazowsze Grójec', 
-        'tabs-2':'Grójec Ośrodek Sportu', 
-        'tabs-3':'MKS Grójec', 
+        'tabs-1':'Mazowsze Miasto', 
+        'tabs-2':'Miasto Ośrodek Sportu', 
+        'tabs-3':'MKS Miasto', 
         'tabs-4':'Sport dzieci', 
         'tabs-5':'-----' })
   </div>
@@ -122,8 +122,8 @@
     @@include('./particles/section-tab.html',{ 
         'switch-class':'kultura', 
         'color-bulet':'po-godzinach', 'active-background':'section-tab-po-godzinach', 'title':'Kultura', 
-        'tabs-1':'Grójecki Osrodek Kultury', 
-        'tabs-2':'Miejsko-Gminna Biblioteka Publiczna w Grójcu', 'tabs-3':'Koncerty', 
+        'tabs-1':'Miastoki Osrodek Kultury', 
+        'tabs-2':'Miejsko-Gminna Biblioteka Publiczna w Mieście', 'tabs-3':'Koncerty', 
         'tabs-4':'-----', 
         'tabs-5':'-----' })
   </div>
@@ -132,7 +132,7 @@
   <div class="uk-container uk-container-xlarge">
     @@include('./particles/section-tab-slider-articles.html',{ 'switch-class':'o-grojcu', 
     'color-bulet':'o-grojcu', 'active-background':'section-tab-o-grojcu', 
-    'title':'O Grójcu', 
+    'title':'O Mieście', 
     'tabs-1':'Historia i zabytki', 
     'tabs-2':'Kościół i religia', 
     'tabs-3':'Grójczanie i ich pasje', 
@@ -144,17 +144,17 @@
     @@include('./particles/slideshow.html',{ 
         'title-1':'SUPER MARIO BROS. FILM', 
         'title-2':'SZYBCY I WŚCIEKLI 10', 
-        'title-3':'Slajder 3', 
+        'title-3':'Samochód doszczętnie spłonął na drodze', 
         'description-1':'Sympatyczny hydraulik Mario wyrusza w niebezpieczną przygodę wraz z przyjacielem Toadem i księżniczką Peach po Grzybowym Królestwie, aby odnaleźć swojego brata Luigiego, a przy okazji uratować świat przed bezwzględnym Bowserem, który potrafi zionąć ogniem.', 
         'description-2':'Wiele lat wcześniej Dominic Toretto (Vin Diesel) wraz ze swoją załogą pokonali brazylijskiego bossa narkotykowego Hernana Reyesa. Przeszłość upomina się o swoje, kiedy Dante (Jason Momoa) zamierza pomścić śmierć swojego ojca. Jest zdeterminowany i nie cofnie się przed niczym, aby osiągnąć swój cel. Dominic i jego rodzina są w ogromnym niebezpieczeństwie.', 
-        'description-3':'Krótki opis 3' })
+        'description-3':'Auto zapaliło się nagle podczas jazdy. Kierowca zdążył opuścić pojazd. Na miejsce przyjechali strażacy. Niestety samochód doszczętnie spłonął.' })
   </div>
 </div>
 <div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-xlarge">
     @@include('./particles/section-tab-grid-card.html',{ 'switch-class':'po-godzinach', 
     'color-bulet':'w-obiektywie', 'active-background':'section-tab-w-obiektywie', 
-    'title':'O Grójcu', 
+    'title':'O Mieście', 
     'tabs-1':'Historia i zabytki', 
     'tabs-2':'Kościół i religia', 
     'tabs-3':'Grójczanie i ich pasje', 

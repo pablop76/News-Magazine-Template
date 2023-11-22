@@ -28,21 +28,22 @@
     <div class="uk-container">
         <div data-uk-grid data-uk-navbar class="uk-child-width-1-3@m uk-flex">
             <div>
-                <div class="uk-navbar-center"><img class="logo" src="images/logo.jpg" alt="logo"></div>
+                <div class="uk-navbar-center uk-flex uk-flex-center">
+                    <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">Logo</a>
+                </div>
             </div>
-            <div class="uk-flex-first@m uk-margin-remove-top">
+            <div class="uk-flex-first@m">
                 <div class="uk-navbar-left uk-flex-center uk-flex-left@m">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#" data-uk-toggle="target: #offcanvas-nav-primary"></a></li>
                         <li class="uk-active"><a class="uk-search-toggle" href="#" data-uk-search-icon></a></li>
                     </ul>
                     <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
-                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                    
+                        <div class="uk-offcanvas-bar uk-flex uk-flex-column">                   
                             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                                 <li>
                                     <div class="uk-margin">
-                                    <a class="uk-logo" href="#"><img class="logo" src="images/logo-footer.png" alt="logo"></a>
+                                        <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">Logo</a>
                                     </div>
                                 </li>
                                 <li>
@@ -56,19 +57,18 @@
                                 <li class="uk-divider-icon"></li>
                                 <li class="uk-active"><a href="#">Aktualności</a></li>
                                 <li><a href="#">Sport</a></li>
-                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">O Mieście</a></li>
                                 <li><a href="#">Po godzinach</a></li>
                                 <li class="uk-divider-icon"></li>
-                                <li><a href="#">Grójec w obiektywie</a></li>
-                                <li><a href="#">TVGrójec24</a></li>
+                                <li><a href="#">Miasto w obiektywie</a></li>
+                                <li><a href="#">TVMiasto24</a></li>
                                 <li><a href="#">Ogłoszenia</a></li>
                                 <li><a href="#">Praca</a></li>
                                 <li class="uk-divider-icon"></li>
                                 <li><a href="#">Alarm24</a></li>
                                 <li><a href="#">Reklama</a></li>
                                 <li><a href="#">Redakcja</a></li>
-                            </ul>
-                    
+                            </ul>          
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="/">Aktualności</a></li>
                         <li><a href="#">Sport</a></li>
-                        <li><a href="#">O Grójcu</a></li>
+                        <li><a href="#">O Mieście</a></li>
                         <li><a href="#">Po godzinach</a></li>
                     </ul>
                 </div>
@@ -107,12 +107,12 @@
                             <a href="#">
                             W obiektywie
                             <!-- <div>
-                            Grójec
+                            Miasto
                             <div class="uk-navbar-subtitle">w obiektywie</div>
                             </div> -->
                             </a>
                         </li>
-                        <li><a href="#">TVGrójec24</a></li>
+                        <li><a href="#">TVMiasto24</a></li>
                         <li><a href="#">Ogłoszenia</a></li>
                         <li><a href="#">Praca</a></li>
                     </ul>
@@ -415,7 +415,7 @@
 </form>
         </div>
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
-          <h2 class="uk-heading-line uk-text-center"><span style=@@color class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" ># NOWOŚCI</span></h2>
+          <h2 class="uk-heading-line uk-text-center"><span class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" ># NOWOŚCI</span></h2>
           <div
   class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-1@m uk-grid-match uk-grid-row-small uk-grid-divider uk-grid uk-grid-stack"
   uk-grid
@@ -544,7 +544,7 @@
 
         </div>
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
-          <h2 class="uk-heading-line uk-text-center"><span style=color:#fff class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-sport" ># SPORT</span></h2>
+          <h2 class="uk-heading-line uk-text-center"><span class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-sport" ># SPORT</span></h2>
             <div
   class="uk-position-relative uk-visible-toggle uk-light"
   tabindex="-1"
@@ -665,7 +665,7 @@
         </div>
 
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom	">
-          <h2 class="uk-heading-line uk-text-center"><span style=color:#fff class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-redakcja" >KATEGORIE</span></h2>
+          <h2 class="uk-heading-line uk-text-center"><span class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-redakcja" >KATEGORIE</span></h2>
           <ul class="uk-nav uk-nav-default" uk-nav>
   <li>
     <a class="uk-heading-bullet uk-heading-bullet-aktualnosci" href="category.html"
@@ -677,7 +677,7 @@
   </li>
   <li>
     <a class="uk-heading-bullet uk-heading-bullet-o-grojcu" href="#"
-      >O Grójcu</a
+      >O Mieście</a
     >
   </li>
   <li>
@@ -695,7 +695,7 @@
   </li>
   <li>
     <a class="uk-heading-bullet uk-heading-bullet-tv-grojec24" href="#"
-      >TVGrójec24</a
+      >TVMiasto24</a
     >
   </li>
   <li>
@@ -730,7 +730,7 @@
 </div>
 <div class="uk-section uk-padding-small">
   <div class="uk-container uk-container-xlarge">
-    <h2 class="uk-heading-line uk-text-center"><span style=@@color class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" >NAJNOWSZE # NOWOŚCI</span></h2>
+    <h2 class="uk-heading-line uk-text-center"><span class="uk-padding-small uk-padding-remove-top uk-padding-remove-bottom uk-badge-aktualnosci" >NAJNOWSZE # NOWOŚCI</span></h2>
     <div class="uk-slider-container-offset" data-uk-slider>
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
@@ -827,16 +827,16 @@
                 <div class="uk-grid-match uk-grid-medium" data-uk-grid>
                     <div class="uk-width-1-3@m">
                         <div class="uk-card uk-card-secondary uk-card-body">
-                            <h3 class="uk-card-title">Grójec24.net</h3>
+                            <h3 class="uk-card-title">Miasto24.net</h3>
                             <hr>
                             <ul class="uk-nav uk-nav-default">
                                 <li class="uk-active"><a href="#">Aktualności</a></li>
                                 <li><a href="#">Sport</a></li>
                                 <li><a href="#">kultura</a></li>
-                                <li><a href="#">O Grójcu</a></li>
+                                <li><a href="#">O Mieście</a></li>
                                 <li><a href="#">Po godzinach</a></li>
-                                <li><a href="#">Grójec w obiektywie</a></li>
-                                <li><a href="#">TVGrójec 24</a></li>
+                                <li><a href="#">Miasto w obiektywie</a></li>
+                                <li><a href="#">TVMiasto 24</a></li>
                                 <li><a href="#">Ogłoszenia</a></li>
                                 <li><a href="#">Praca</a></li>
                                 <li><a href="#">Alarm24</a></li>
@@ -852,8 +852,8 @@
                             <div class="uk-child-width-1-2@m" data-uk-grid>
                                 <div>
                                     <ul class="uk-nav uk-nav-default">
-                                        <li><a href="#">Grójec</a></li>
-                                        <li><a href="#">Powiat Grójecki</a></li>
+                                        <li><a href="#">Miasto</a></li>
+                                        <li><a href="#">Powiat Miastoki</a></li>
                                         <li><a href="#">Belsk Duży</a></li>
                                         <li><a href="#">Błedów</a></li>
                                         <li><a href="#">Chynów</a></li>
@@ -872,16 +872,16 @@
                                         <li><a href="#">Samorząd</a></li>
                                         <li><a href="#">Policja</a></li>
                                         <li><a href="#">Na Sygnale</a></li>
-                                        <li><a href="#">Grójecki Ośrodek Sportu</a></li>
-                                        <li><a href="#">Grójecki Ośrodek Kultury</a></li>
-                                        <li><a href="#">Biblioteka w Grójcu</a></li>
-                                        <li><a href="#">Sąd Rejonowy w Grójcu</a></li>
+                                        <li><a href="#">Miastoki Ośrodek Sportu</a></li>
+                                        <li><a href="#">Miastoki Ośrodek Kultury</a></li>
+                                        <li><a href="#">Biblioteka w Mieście</a></li>
+                                        <li><a href="#">Sąd Rejonowy w Mieście</a></li>
                                         <li><a href="#">Historia i zabytki</a></li>
                                         <li><a href="#">Kościół i religia</a></li>
                                         <li><a href="#">Grójczanie i ich pasje</a></li>
-                                        <li><a href="#">Mazowsze Grójec</a></li>
-                                        <li><a href="#">MKS Grójec</a></li>
-                                        <li><a href="#">nieruchomości Grójec</a></li>
+                                        <li><a href="#">Mazowsze Miasto</a></li>
+                                        <li><a href="#">MKS Miasto</a></li>
+                                        <li><a href="#">nieruchomości Miasto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -891,9 +891,10 @@
              </div>
             <div class="uk-width-1-4@m">
                 <div class="uk-card uk-card-secondary uk-card-body">
-                    <img class="logo" src="images/logo-footer.png" alt="">
+                    <!-- <img class="logo" src="" alt=""> -->
+                    <h3 class="uk-card-title">Logo</h3>
                     <hr>
-                    <p>Grójec24.net-najwiekrzy portal informacyjny Grójca i Powiatu Grójeckiego. Od 2013 roku dostarczamy najświeższe wiadomości z Grójca i okolic. Kazdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
+                    <p>Portal24.net - najwiekrzy portal informacyjny Miasta i Powiatu Miastokiego. Od 2013 roku dostarczamy najświeższe wiadomości z Miasta i okolic. Każdego miesiąca gościmy na ekranach tysiąca mieszkańców.</p>
                     <hr>
                     <ul class="uk-navbar-nav">
                         <li><a href="#"><span data-uk-icon="facebook"></span></a></li>
@@ -906,8 +907,8 @@
         </div>
         <hr>
         <div class="uk-position-relative uk-grid-small uk-child-width-1-2@m uk-light uk-text-small" data-uk-grid>
-                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Grojec24.net</span> - informacyjny portal mieszkańców Grójca i Powiatu Grójeckiego</div>
-                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">AaaMedia.pl Mateusz Adamski</span>
+                <div>&copy;2013 - &copy;2024 <span class="uk-text-bold">Portal24.net</span> - informacyjny portal mieszkańców Miasta i Powiatu Miasta</div>
+                <div class="uk-text-right">Wydawcą portalu jest - <span class="uk-text-bold">Portal.net Jan Kowalski</span>
                 </div>
         </div>
     </div>
